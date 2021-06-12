@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPro</title>
+    {% load static %}
+    {% block css %}
+    {% endblock %}
+    <link rel="stylesheet" href="{% static '/'%}css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- <header>
+        <div class="header__sesion">
+            <a href="./secundary/login.html">Iniciar sesión</a>
+            <a href="./secundary/register.html">Registrate</a>
+        </div>
+        <nav class="header__nav">
+            <div class="nav__logo">
+                <a href="">MusicPro</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__items"><a href="#" class="nav__links active-link">Inicio</a></li>
+                    <li class="nav__items"><a href="#" class="nav__links">Productos</a></li>
+                    <li class="nav__items"><a href="#" class="nav__links">Otros</a></li>
+                    <li class="nav__items"><a href="#" class="nav__links">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header> -->
+    <main>
+        {% block contenido %}
+        {% endblock %}
+    </main>
+    <footer>
+        <section class="footer__top">
+            <div class="footer__row">
+                <div class="footer__row--title">
+                    <h4>Medio de pago</h4>
+                </div>
+                <div class="footer__row--body">
+                    <img src="./img/instalar-webpay-plus-300x140-1.png" alt="">
+                </div>
+            </div>
+            <div class="footer__row">
+                <div class="footer__row--title">
+                    <h4>Información de Contacto</h4>
+                </div>
+                <div class="footer__row--body">
+                    <p><i class='bx bxs-map'></i> San Martin 622, Concepción, Chile</p><br>
+                    <p><i class='bx bx-phone' ></i> +56 9 1234 5678</p>
+                </div>
+            </div>
+            <div class="footer__row">
+                <div class="footer__row--title">
+                    <h4>Redes Sociales</h4>
+                </div>
+                <div class="footer__row--body">
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-facebook' ></i>
+                    <i class='bx bxl-twitter' ></i>
+                </div>
+            </div>
+        </section>
+        <section class="footer__bottom">
+            <p>Integración de Plataformas || Duoc UC 2021</p>
+        </section>
+    </footer>
+    {% block javascript %}
+    {% endblock %}
+    <script src="{% static '/'%}js/main.js"></script>
+</body>
+</html>
